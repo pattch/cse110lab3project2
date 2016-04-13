@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         mEditText1 = (EditText)findViewById(R.id.num1);
         mEditText2 = (EditText)findViewById(R.id.num2);
         mButton = (AppCompatButton)findViewById(R.id.add);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Sum here
+            }
+        });
+
     }
 
     @Override

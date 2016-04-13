@@ -21,11 +21,10 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity> {
         TextView textView = (TextView)mainActivity.findViewById(R.id.sum);
         int n1 = 5, n2 = 7;
         int n3 = n1 + n2;
+        int sum = mainActivity.sum(n1,n2);
 
-        mainActivity.sum(n1,n2);
-
-        String sum = textView.getText().toString();
-        int foundSum = Integer.parseInt(sum);
-        assertEquals(n3,foundSum);
+//        String sum = textView.getText().toString();
+//        int foundSum = Integer.parseInt(sum);
+        assertEquals(n3,sum);
     }
 }
